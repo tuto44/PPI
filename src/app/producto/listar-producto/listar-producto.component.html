@@ -1,0 +1,99 @@
+<header>
+    <h1>Security EZ</h1>
+    <nav>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Buscar...">
+            <i class="bi bi-search"></i>
+        </div>
+        <a href="#">
+            <i class="bi bi-list"></i>
+        </a>
+        <a href="#">
+            <i class="bi bi-person"></i>
+        </a>
+        <a href="#">
+            <i class="bi bi-cart"></i>
+        </a>
+    </nav>
+</header>
+<section class="product-section" *ngIf="categoria=='monitores'">
+    <div class="product">
+        <img src="https://th.bing.com/th/id/OIP.56SxiE3TQSuFgzkveMErqAHaHa?rs=1&pid=ImgDetMain" alt="monitor cctv">
+        <h3 class="product-title">Monitor CCTV, Referencias DAHUA </h3>
+        <button class="product-button" (click)="verDetalle('Monitor CCTV, Referencias DAHUA')">Ver detalles</button>
+    </div>
+    <div class="product">
+        <img src="https://image.made-in-china.com/2f0j00RWpGoObaaEqA/32-Inch-LCD-Module-Screen-Industrial-CCTV-Tester-4K-Monitor-BNC-AV-HDMI-Mini-LED-Display-for-Security-Cameras-System.jpg" alt="monitor 32">
+        <h3 class="product-title">Pantalla de módulo LCD de 32 pulgadas</h3>
+        <button class="product-button" (click)="verDetalle('Pantalla de módulo LCD de 32 pulgadas')">Ver detalles</button>
+    </div>
+    <div class="product">
+        <img src="https://www.latam.johnsoncontrols.com/es/-/media/jci/be/united-states/p1-images/security/video-surveillance/monitors/bts_productcard_general_purpose_monitors.png?h=564&w=752&la=es&hash=DA92002CC6FDC879C40FEA90C9DF4A61EC18737F" alt="Cámara Tapo C225 Inteligente Wi-Fi De Seguridad Para El Hogar Con Movimiento Horizontal Y Vertical">
+        <h3 class="product-title">Monitor hdr de 23"</h3>
+        <button class="product-button" (click)="verDetalle('Monitor hdr de 23 pulgadas')" >Ver detalles</button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzsI6tLrtstb_bgYTupZzs15rMODOuGtRyBg&s" alt="Cámara Tapo C225 Inteligente Wi-Fi De Seguridad Para El Hogar Con Movimiento Horizontal Y Vertical">
+        <h3 class="product-title">Monitor de 24” IPS Full HD </h3>
+        <button class="product-button"(click)="verDetalle('Monitor de 24 pulgadas IPS Full HD')">Ver detalles</button>
+    </div>
+    
+</section>
+
+<section class="product-section" *ngIf="categoria=='camara'">   
+    <div class="product">
+        <img src="https://rfidtecnologia.com/wp-content/uploads/2019/08/DS-2AE5225TI-A.jpg" alt="Camara tipo domo ">
+        <h3 class="product-title">Cámara Tipo Domo </h3>
+        <button class="product-button" (click)="verDetalle('Cámara Tipo Domo')">Ver detalles</button>
+        
+    </div>
+    <div class="product">
+        <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/sodimacCO/473584/w=1036,h=832,f=webp,fit=contain,q=85" alt="Camara Wifi para el Hogar">
+        <h3 class="product-title">Camara Wifi para el Hogar </h3>
+        <button class="product-button" (click)="verDetalle('Camara Wifi para el Hogar')">Ver detalles</button>
+    </div>
+    <div class="product">
+        <img src="https://img.freepik.com/fotos-premium/camara-seguridad-blanca-aislada-fondo-blanco-ia-generativa_410516-60364.jpg" alt="Cámara Tapo C225 Inteligente Wi-Fi De Seguridad Para El Hogar Con Movimiento Horizontal Y Vertical">
+        <h3 class="product-title">Cámara Domo 4.0 Hikvision DS-2CE16C0T-iRPF 3,6 mm </h3>
+        <button class="product-button" (click)="verDetalle('Cámara Domo 4.0 Hikvision DS-2CE16C0T-iRPF 3,6 mm')">Ver detalles</button>
+    </div>
+    <div class="product">
+        <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/sodimacCO/700456/w=1036,h=832,f=webp,fit=contain,q=85" alt="Cámara Tapo C225 Inteligente Wi-Fi De Seguridad Para El Hogar Con Movimiento Horizontal Y Vertical">
+        <h3 class="product-title">Cámara Tapo C226 </h3>
+        <button class="product-button" (click)="verDetalle('Cámara Tapo C226')">Ver detalles</button>
+    </div>
+
+</section>
+
+<section class="product-section" *ngIf="categoria=='alarmas'">   
+    <div class="product">
+        <img src="https://mikasastore.com/4080-large_default/kit-de-seguridad-5-sistema-de-alarma-wifi-gsm.jpg" alt="Camara tipo domo ">
+        <h3 class="product-title">Panel de alarma o unidad principal WIFI +GSM</h3>
+        <button class="product-button" (click)="verDetalle('Panel de alarma o unidad principal WIFI +GSM')">Ver detalles</button>
+    </div>
+    <div class="product">
+        <img src="https://mikasastore.com/4079-large_default/kit-de-seguridad-5-sistema-de-alarma-wifi-gsm.jpg" alt="Camara Wifi para el Hogar">
+        <h3 class="product-title">Sensor de Movimiento </h3>
+        <button class="product-button" (click)="verDetalle('Sensor de Movimiento')">Ver detalles</button>
+    </div>
+    <div class="product">
+        <img src="https://s.libertaddigital.com/2021/10/30/290/0/sistema-de-alarma-para-casa-kerui-w18.jpg" alt="Cámara Tapo C225 Inteligente Wi-Fi De Seguridad Para El Hogar Con Movimiento Horizontal Y Vertical">
+        <h3 class="product-title">Sistema de alarma para casa Kerui W18</h3>
+        <button class="product-button" (click)="verDetalle('Sistema de alarma para casa Kerui W18')">Ver detalles</button>
+    </div>
+    <div class="product">
+        <img src="https://s.libertaddigital.com/2021/10/30/290/0/sistema-de-alarma-para-casa-tecpeak-a1.jpg" alt="Cámara Tapo C225 Inteligente Wi-Fi De Seguridad Para El Hogar Con Movimiento Horizontal Y Vertical">
+        <h3 class="product-title">Sistema de alarma para casa TecPeak A1</h3>
+        <button class="product-button" (click)="verDetalle('Sistema de alarma para casa TecPeak A1')">Ver detalles</button>
+    </div>
+    
+</section>
+<footer>
+</footer>
+
+
+
+
+
+
+

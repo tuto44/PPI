@@ -1,0 +1,193 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+        }
+        header {
+            background-color: rgb(99, 146, 247);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1{
+            font-size: 40px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar {
+            flex: 1;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .icon {
+            font-size: 24px; /* Aumenta el tamaño de los íconos */
+            margin-left: 20px; /* Agrega espacio entre los íconos */
+        }
+        img{
+            max-width: 100%;
+            max-height: 150px; /* Controla la altura máxima de las imágenes */
+            display: block;
+            margin: auto;
+        }
+
+        .wishlist-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .wishlist-item {
+            width: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .wishlist-item img {
+            max-width: 100%;
+        }
+
+        .wishlist-item-info {
+            text-align: center;
+        }
+
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quantity-button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .add-to-cart-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer-background {
+            background-color: rgb(99, 146, 247);
+            height: 118px; /* Altura del fondo azul inferior */
+        } 
+        
+        .bi-search {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        
+        .bi-list {
+            font-size: 24px; /* Aumenta el tamaño de los íconos */
+            margin-left: 20px; /* Agrega espacio entre los íconos */
+            color: black;
+        }
+        .bi-person {
+            font-size: 24px; /* Aumenta el tamaño de los íconos */
+            margin-left: 20px; /* Agrega espacio entre los íconos */
+            color: black
+        }
+        .bi-cart {
+            font-size: 24px; /* Aumenta el tamaño de los íconos */
+            margin-left: 20px; /* Agrega espacio entre los íconos */
+            color: black
+        }
+
+
+
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+
+        .checkout-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .checkout-form {
+            width: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            justify-content: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .payment-options {
+            display: flex;
+            justify-content: center;
+        }
+
+        .payment-option {
+            margin: 0 10px;
+        }
+
+        .total {
+            font-weight: bold;
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .pay-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }

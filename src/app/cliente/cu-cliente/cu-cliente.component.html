@@ -1,0 +1,64 @@
+<div class="container">
+    <h1>Módulo de Clientes</h1>
+
+    <!-- Formulario para Crear/Actualizar Proveedor -->
+    <div class="form-container">
+        <h2>Agregar/Actualizar Clientes</h2>
+        <form id="provider-form">
+            <label for="nombre">Nombre del Cliente:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="usuario">usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="contrasena">contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <button type="submit" id="btn-submit">Guardar</button>
+        </form>
+    </div>
+
+    <!-- Tabla/Listado de Proveedores -->
+    <div class="table-container">
+        <h2>Listado de Clientes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Email</th>
+                    <th>usuario</th>
+                    <th>contraseña</th>
+                    <th>Acciones</th>
+
+                </tr>
+            </thead>
+            <tbody id="provider-list">
+                <!-- Aquí se mostrarán los proveedores -->
+                <!-- Ejemplo de Fila -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="delete-btn">Borrar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+<body>
+    <div class="container">
+        <h1>SECURITE EZ</h1>
+        <h2>Los mejores circuitos cerrados de CCTV</h2>
+        <p>Da click en registrarte para poder tener una atención más personalizada.</p>
+        <div class="buttons">
+            <button (click)="ircatalogo()">Continuar sin iniciar sesión</button>
+            
+            <button class="active"data-bs-toggle="modal" data-bs-target="#iniciarSesion">Iniciar sesión</button>
+            <button data-bs-toggle="modal" data-bs-target="#registrarse">Registrarse</button>
+        </div>
+    </div>
+</body>
+
+  
+  <!-- Modal iniciar seccion-->
+  <div class="modal fade" id="iniciarSesion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Iniciar Sesion</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="login-form">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" placeholder="usuario">
+            <input type="contraseña" placeholder="Contraseña">
+            <button (click)="ircatalogo()" class="modalIniciarSesion">Iniciar Sesión</button>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal registro-->
+    <div class="modal fade" id="registrarse" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Registrarse</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="register-form">
+        <h2>Registrarse</h2>
+        <input type="text" placeholder="Nombre completo">
+        <input type="text" placeholder="usuario">
+        <input type="password" placeholder="Contraseña">
+        <div>
+            <button>Cancelar</button>
+            <button (click)="ircatalogo()" class="bRegistra">Registrarse</button>
+        </div>
+    </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
